@@ -1,4 +1,4 @@
-From 6fae0d2a7748253f0c92057a78624977a923e00a Mon Sep 17 00:00:00 2001
+From 237db7f44331c960c13be37511a112b195b1ea44 Mon Sep 17 00:00:00 2001
 From: Pandhariix <mbusy.pro@gmail.com>
 Date: Mon, 16 Dec 2019 16:56:33 +0100
 Subject: [PATCH 2/3] Update libqicore CMakeLists for melodic compilation
