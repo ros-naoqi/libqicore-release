@@ -5,15 +5,11 @@
 
 #pragma once
 
-#ifndef QICORE_API_H_
-#define QICORE_API_H_
+#ifndef ALICE_SERVICE_API_H_
+#define ALICE_SERVICE_API_H_
 
 #include <qi/macro.hpp>
 
-#ifndef SWIG
-#define QICORE_API QI_LIB_API(qicore)
-#else
-#define QICORE_API
-#endif
+#define ALICE_SERVICE_API QI_LIB_API(alice_service)
 
 #endif /* !QICORE_API_H_ */

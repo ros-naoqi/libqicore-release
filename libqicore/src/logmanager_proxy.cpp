@@ -7,40 +7,50 @@
 #include <qicore/logmessage.hpp>
 #include <qicore/logmanager.hpp>
 #include <qicore/loglistener.hpp>
+#include <qi/detail/warn_push_ignore_deprecated.hpp>
 
 bool qi::detail::ForceProxyInclusion<qi::LogManager>::dummyCall()
-{ return true; }
+{
+  return true;
+}
 
 namespace qi
 {
-  class LogManagerProxy : public qi::Proxy, public LogManager
+class LogManagerProxy : public qi::Proxy, public LogManager
+{
+public:
+  explicit LogManagerProxy(qi::AnyObject obj)
+    : qi::Proxy(std::move(obj))
   {
-  public:
-    LogManagerProxy(qi::AnyObject obj)
-      : qi::Proxy(obj)
-    {
-    }
+  }
 
-    void log(const std::vector<LogMessage>& p0)
-    {
-      _obj.call<void>("log", p0);
-    }
+  void log(const std::vector<LogMessage>& p0)
+  {
+    _obj.call<void>("log", p0);
+  }
 
-    LogListenerPtr getListener()
-    {
-      return _obj.call<LogListenerPtr>("getListener");
-    }
+  LogListenerPtr createListener()
+  {
+    return _obj.call<LogListenerPtr>("createListener");
+  }
 
-    int addProvider(Object<LogProvider> p0)
-    {
-      return _obj.call<int>("addProvider", p0);
-    }
+  LogListenerPtr getListener()
+  {
+    return _obj.call<LogListenerPtr>("getListener");
+  }
 
-    void removeProvider(int p0)
-    {
-      _obj.call<void>("removeProvider", p0);
-    }
-  };
+  int addProvider(Object<LogProvider> p0)
+  {
+    return _obj.call<int>("addProvider", p0);
+  }
 
-  QI_REGISTER_PROXY_INTERFACE(LogManagerProxy, LogManager);
+  void removeProvider(int p0)
+  {
+    _obj.call<void>("removeProvider", p0);
+  }
+};
+
+QI_REGISTER_PROXY_INTERFACE(LogManagerProxy, LogManager);
 } // !qi
+
+#include <qi/detail/warn_push_ignore_deprecated.hpp>

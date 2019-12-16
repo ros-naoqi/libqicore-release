@@ -9,6 +9,3 @@ qi_sanitize_compile_flags(HIDDEN_SYMBOLS)
 enable_testing()
 
 add_subdirectory("libqicore")
-add_subdirectory("services")
-add_subdirectory("bin")
-
