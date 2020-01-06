@@ -4,8 +4,8 @@
   <version>2.9.0</version>
   <description>Aldebaran's libqicore: a layer on top of libqi</description>
 
+  <maintainer email="mbusy@softbankrobotics.com">Maxime Busy</maintainer>
   <maintainer email="surya.ambrose@gmail.com">Surya Ambrose</maintainer>
-  <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>
   <license>BSD</license>
 
   <url type="repository">https://github.com/aldebaran/libqicore</url>
