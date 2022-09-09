@@ -1,0 +1,12 @@
+Source: ros-noetic-naoqi-libqicore
+Section: misc
+Priority: optional
+Maintainer: Maxime Busy <mbusy@softbankrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-naoqi-libqi
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-naoqi-libqicore
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-naoqi-libqi
+Description: Aldebaran's libqicore: a layer on top of libqi
