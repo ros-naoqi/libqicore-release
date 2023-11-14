@@ -1,0 +1,36 @@
+ros-humble-naoqi-libqicore (3.0.0-1bullseye) bullseye; urgency=high
+
+  * Remove rolling CI
+  * Add more testing workflows
+  * Add Victor as maintainer
+  * Merge pull request #1 <https://github.com/ros-naoqi/libqicore/issues/1> from victorpaleologue/ros2
+    Fixes for Ubuntu jammy's boost 1.74 (humble, iron)
+  * Build explicitly for C++11
+  * Fix placeholders for boost 1.74
+  * Dev container to work on sources
+    At this stage it's checking out an unofficial libQi
+  * Remove spurious badge from README
+  * Add proper ROS2 CI tests, update the README accordingly
+
+ -- Victor Paléologue <victor.paleologue@palaio.eu>  Tue, 14 Nov 2023 00:00:00 -0000
+
+ros-humble-naoqi-libqicore (2.5.0-1bullseye) bullseye; urgency=high
+
+  * Add CI for ROS2 and update README
+  * Adding extra compilation arguments for ROS2
+  * Update the package for ROS2 compatibility
+  * Remove native unused project file
+
+ -- Victor Paléologue <victor.paleologue@palaio.eu>  Mon, 20 Dec 2021 00:00:00 -0000
+
+ros-humble-naoqi-libqicore (1.12.0-1bullseye) bullseye; urgency=high
+
+  * Update README and add CI
+  * Add timestamp to LogMessage
+  * Merge remote-tracking branch 'origin/team/platform/dev' into ros
+  * Add basic ROS 1 package structure
+  * Fork from upstream branch release-2.9 (ad91f9199fbdf845bac2d48da27ab44a570a0da1)
+
+ -- Victor Paléologue <victor.paleologue@palaio.eu>  Tue, 12 Dec 2023 00:00:00 -0000
+
+
