@@ -1,3 +1,26 @@
+## naoqi_libqicore (humble) - 3.0.0-1
+
+The packages in the `naoqi_libqicore` repository were released into the `humble` distro by running `/usr/local/bin/bloom-release --track humble --ros-distro humble naoqi_libqicore` on `Tue, 14 Nov 2023 11:03:20 -0000`
+
+The `naoqi_libqicore` package was released.
+
+Version of package(s) in repository `naoqi_libqicore`:
+
+- upstream repository: https://github.com/ros-naoqi/libqicore.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `3.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## naoqi_libqicore (galactic) - 2.9.7-0
 
 The packages in the `naoqi_libqicore` repository were released into the `galactic` distro by running `/usr/bin/bloom-release --rosdistro galactic --track galactic naoqi_libqicore` on `Fri, 09 Sep 2022 23:31:34 -0000`
